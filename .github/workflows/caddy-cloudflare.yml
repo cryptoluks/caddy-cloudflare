@@ -16,9 +16,6 @@ concurrency:
 
 jobs:
   caddy-cloudflare:
-    env:
-      IMAGE: caddy-cloudflare
-      IMAGE_TAG: latest
     runs-on: ubuntu-latest
     steps:
     - name: Login to ${{ env.REGISTRY }} as ${{ github.actor }}
